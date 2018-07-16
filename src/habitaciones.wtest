@@ -5,6 +5,8 @@ describe "hogar"{
 
 //*********** OBJETOS PUNTO 1 *************
 
+//TODO: No podeés usar la referencia casaFlia antes de haberla definido!
+
 //una persona de 37 años sin habilidades de cocina (para el ultimo punto del examen es Sencillo) 
 	var leo = new Sencillas(edad=37, esCocinera=false, casa= casaFlia)
 
@@ -144,6 +146,8 @@ describe "hogar"{
 	test "andrea y milena entrando y saliendo de cuartos" {
 //			
 //		// HACER que milena entre a banioPrincipal
+
+//TODO: Esto se tiene que resolver con un único mensaje!!
 		milena.nuevaHabitacion(banioConMenor)
 		banioPrincipal.entrar(milena)
 		assert.equals(banioPrincipal, milena.habitacion())
